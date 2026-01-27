@@ -1,0 +1,519 @@
+body{
+    margin: 15px;
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+hr{
+    border: none;
+    background-color: #18dae0;
+    width: 99%;
+    height: 0.1px;
+    margin-top: 20%;
+}
+h4{
+    color: #18dae0;
+}
+.grey-paragraphs{
+    color: grey;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    grid-template-areas: 
+            "nav-bar"
+            "hero-section-subtitle"
+            "hero-section"
+            "my-photo"
+            "about-me"
+            "skills"
+            "projects"
+            "resume"
+            "contact"
+            "footer";
+}
+
+/* NAVBAR  */
+.nav-bar{
+    height: 130%;
+    grid-area: nav-bar;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 50;
+    backdrop-filter: blur(50px);
+    background: transparent;
+}
+.nav-links{
+    display: none;/*I will display the nav links on larger screens*/
+}
+.hire-me-profile{
+    display: none;
+}
+.btn-hire-me{
+    display: none;
+}
+.my-initial{
+    height: 50px;
+    width: 50px;
+    background-color: #18dae0;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-content: center;
+    
+}
+.my-initial p{
+    margin: 0%;
+}
+.my-name-container{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.my-name{
+    display: flex;
+    flex-direction: column;
+}
+.my-name p{
+    margin: 0%;
+}
+
+/* HERO SECTION  */
+.hero-section-subtitle{
+    grid-area: hero-section-subtitle;
+    margin-top: 10%;
+}
+.hero-section{
+    grid-area: hero-section;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.home-section-main-title{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.home-buttons{
+    display: flex;
+    gap: 2rem;
+}
+.btn-view-projects{
+    text-decoration: none;
+    background-color: #18dae0;
+    width: 152px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+}
+.btn-lets-talk{
+    border: 1px solid #18dae0;
+    text-decoration: none;
+    background-color: black;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    color: #18dae0;
+    font-weight: bold;
+    padding: 8px;
+   
+}
+.home-cards-wrapper{
+    display: flex;
+    width: 100%;  
+    gap: 1rem;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    
+}
+.home-cards{
+    border: 1px solid #18dae0;
+    width: 30%;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 10px;
+    flex: 1;
+    text-wrap: nowrap;
+}
+.home-cards p{
+    margin: 0;
+}
+.highlights{
+    color: #18dae0;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 0%;
+}
+.my-photo{
+    grid-area: my-photo;
+    display: flex;
+    width: 80%;
+    height: auto;
+    border: 1px solid #18dae0;
+    border-radius: 5px;
+    justify-self: center; 
+    align-self: center;
+    margin-top: 5%;
+}
+.my-photo img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+/*   ABOUT ME   */
+.profile-details{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.profile-details p{
+    margin: 2px;
+}
+.blue-dot{
+    color: #18dae0;
+    font-size: large;
+}
+.education{
+    display: flex;
+    gap: 1rem;
+}
+.vertical-line{
+    margin-top: 2.5rem;
+    background-color: #18dae0;
+    height: auto;
+    width: 1px;
+    
+}
+
+/* SKILLS SECTION  */
+.skills-wrapper-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skills-cards{
+    border: #18dae0 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+.skills-card-header{
+    display: flex;
+    gap: 1rem;
+    color: #18dae0;
+    font: 1em sans-serif;
+}
+.skills-card-header img{
+    width: 40px;
+    height: 40px;
+}
+.skills-items-wrapper{
+    display: flex;
+   
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+}
+.skills-items{
+    margin-top: 2%;
+    border: #18dae0 1px solid;
+    width: auto;
+    border-radius: 10px;
+    color: #76b5c5;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 5px;
+    
+}
+
+/*  PROJECTS   */
+.projects-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.project{
+    border: #18dae0 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+}
+/*   RESUME    */
+.btn-download-cv{
+    
+    text-decoration: none;
+    background-color: #18dae0;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+}
+/*   CONTACT    */
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: auto;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+.form-wrapper input, textarea{
+    border: #18dae0 1px solid;
+    border-radius: 5px;
+    background-color: black;
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 8px;
+    color: grey;
+}
+textarea{
+    height: 100px;
+}
+.send-message{
+     text-decoration: none;
+    background-color: #18dae0;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 15px;
+}
+
+/*    FOOTER    */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.my-name-footer {
+    color: #18dae0;
+    font-weight: bold;
+    font-size: large;
+}
+.footer img{
+    height: 40px;
+    width: 40px;
+}
+
+@media (min-width: 1024px) {
+    body{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+
+    .grid-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    grid-template-areas: 
+            "nav-bar nav-bar nav-bar"
+            "hr hr hr"
+            "hero-section-subtitle hero-section-subtitle hero-section-subtitle"
+            "hero-section hero-section hero-section"
+            "my-photo my-photo my-photo"
+            "hr2 hr2 hr2"
+            "about-me-headings about-me-headings about-me-headings"
+            "about-me about-me about-me"
+            "hr3 hr3 hr3"
+            "skills-heading skills-heading skills-heading"
+            "skills skills skills"
+            "hr4 hr4 hr4"
+            "projects-headings projects-headings projects-headings"
+            "projects-wrapper projects-wrapper projects-wrapper"
+            "hr5 hr5 hr5"
+            "resume-heading resume-heading resume-heading"
+            "resume resume resume"
+            "hr6 hr6 hr6"
+            "contact contact contact"
+            "hr7 hr7 hr7"
+            "footer footer footer";
+    }
+    hr{
+        grid-area: hr;
+        width: 100%;
+        margin-top:2rem;
+    }
+    .hr2{
+        grid-area: hr2;
+    }
+    .hr3{
+        grid-area: hr3;
+    }
+    .hr4{
+        grid-area: hr4;
+    }
+    .hr5{
+        grid-area: hr5;
+    }
+    .hr6{
+        grid-area: hr6;
+    }
+    .hr7{
+        grid-area: hr7;
+    }
+    .nav-links{
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 3rem;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: #76b5c5;
+        font-size: 1.1em;
+    }
+    .hire-me-wrapper{
+        display: flex;
+        height: 100%;
+        width: 15%;
+        justify-content: space-between;
+        justify-items: center;
+        align-content: center;
+    }
+    .btn-hire-me {
+    display: flex;
+    text-decoration: none;
+    background-color: #18dae0;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5%;
+    }
+    .btn-hire-me a{
+        color: black;
+        font-weight: bold;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .hire-me-profile{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: #18dae0;
+    border-radius: 25px;
+    
+    }
+    .hire-me-profile img{
+        border-radius: 25px;
+    }
+    .btn-menu{
+        display: none;
+    }
+    .hero-section-subtitle{
+    grid-area: hero-section-subtitle;
+    margin-top: 2rem;
+}
+    .my-photo{
+    object-fit: contain;
+    width: 40%;
+    height: 80%;
+    }
+    .about-me-headings{
+        grid-area: about-me-headings;
+        margin-bottom: 1.5rem;
+         margin-top: 2rem;
+    }
+    .about-me-wrapper{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .about-me{
+        grid-area: about-me;
+        display: flex;
+        gap:6rem;
+    }
+    .personal-details{
+        display: flex;
+        gap:3rem;
+    }
+    .skills{
+        grid-area: skills;
+        display: flex;
+        
+    }
+    .skills-heading{
+        grid-area: skills-heading;
+        margin-bottom: 1.5rem;
+         margin-top: 2rem;
+    }
+    .skills-wrapper-cards{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+    .skills-items {
+    margin-top: 2%;
+    border: 1px solid #18dae0;
+    border-radius: 10px;
+    color: #76b5c5;
+    font-weight: bold;
+    padding: 5px 10px;
+
+    flex: auto;   
+    white-space: normal; 
+    }
+
+    .projects-headings{
+        grid-area: projects-headings;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+    }
+    .projects-wrapper{
+        grid-area: projects-wrapper;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                "project project";
+    }
+    
+    .resume-heading{
+        grid-area: resume-heading;
+        margin-bottom: 1.5rem;
+         margin-top: 2rem;
+    }
+    .resume{
+        grid-area: resume;
+    }
+    .contact{
+        grid-area: contact;
+        width: 60%;
+        margin-top: 2rem;
+    }
+    .footer{
+        grid-area: footer;
+        
+    }
+}
