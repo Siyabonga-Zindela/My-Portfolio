@@ -4,13 +4,44 @@ body{
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 3rem;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 113%;
+  right: 0;
+  background-color: black;
+  backdrop-filter: blur(210px);
+  height: 150px;
+  width: 160px;
+}
+.menu a{
+  text-decoration: none;
+  color: #18dae0;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 1.5rem;
+  z-index: 0;
+}
+/* show menu when image is clicked focused */
+.menu-wrapper:focus-within .menu {
+  display: block;
+  
+}
+
 hr{
-    border: none;
-    background-color: #18dae0;
+    color: #18dae0;
     width: 99%;
-    height: 0.1px;
+    height: 0.001px;
     margin-top: 20%;
 }
+
 h4{
     color: #18dae0;
 }
@@ -50,7 +81,7 @@ h4{
     background: transparent;
 }
 .nav-links{
-    display: none;/*I will display the nav links on larger screens*/
+    display: none;
 }
 .hire-me-profile{
     display: none;
@@ -325,7 +356,9 @@ textarea{
         margin-left: 100px;
         margin-right: 100px;
     }
-
+    .menu-wrapper{
+        display: none;
+    }
 
     .grid-wrapper{
     display: grid;
