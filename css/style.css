@@ -17,8 +17,7 @@ body{
   top: 113%;
   right: 0;
   background-color: black;
-  backdrop-filter: blur(210px);
-  height: 150px;
+  height: 140px;
   width: 160px;
 }
 .menu a{
@@ -26,7 +25,7 @@ body{
   color: #18dae0;
   font-weight: bold;
   padding: 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   z-index: 0;
 }
 /* show menu when image is clicked focused */
