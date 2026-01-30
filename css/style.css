@@ -35,9 +35,8 @@ body{
 }
 
 hr{
-    color: #18dae0;
+    border: 0.001px #18dae0 solid;
     width: 99%;
-    height: 0.001px;
     margin-top: 20%;
 }
 
@@ -410,6 +409,7 @@ textarea{
     .hr7{
         grid-area: hr7;
     }
+   
     .nav-links{
     display: flex;
     justify-content: space-between;
