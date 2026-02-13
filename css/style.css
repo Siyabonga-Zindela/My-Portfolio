@@ -12,13 +12,18 @@ body{
 }
 
 .menu {
-  display: none;
+  
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  top: 113%;
+  top: 100%;
   right: 0;
-  background-color: black;
-  height: 140px;
-  width: 160px;
+  z-index: 50;
+  width: 100%;
+  background:  black; 
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
 }
 .menu a{
   text-decoration: none;
@@ -26,12 +31,12 @@ body{
   font-weight: bold;
   padding: 20px;
   font-size: 1.5rem;
-  z-index: 0;
+  text-align: center;
 }
 /* show menu when image is clicked focused */
-.menu-wrapper:focus-within .menu {
-  display: block;
-  
+.nav-bar:focus-within .menu {
+  opacity: 10;
+  visibility: visible;
 }
 
 hr{
@@ -53,6 +58,7 @@ h4{
     height: auto;
     grid-template-areas: 
             "nav-bar"
+       
             "hero-section-subtitle"
             "hero-section"
             "my-photo"
@@ -352,6 +358,10 @@ textarea{
 .footer img{
     height: 40px;
     width: 40px;
+}
+.footer-paragraphs{
+    color: grey;
+    margin: 15px;
 }
 
 @media (min-width: 1024px) {
