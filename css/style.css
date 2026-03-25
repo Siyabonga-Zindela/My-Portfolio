@@ -184,6 +184,9 @@ h4{
     padding: 8px;
    
 }
+.btn-lets-talk:hover{
+    color: white;
+}
 .home-cards-wrapper{
     display: flex;
     width: 100%;  
@@ -268,6 +271,7 @@ h4{
     border-radius: 10px;
     padding: 10px;
 }
+
 .skills-card-header{
     display: flex;
     gap: 1rem;
@@ -297,9 +301,12 @@ h4{
     justify-content: center;
     white-space: nowrap;
     padding: 5px;
-    
+    transition: transform 0.3s ease;
 }
-
+.skills-items:hover{
+     transform: translateY(-10px);
+     color: white;
+}
 /*  PROJECTS   */
 .projects-wrapper{
     display: flex;
@@ -326,6 +333,15 @@ h4{
     color: black;
     font-weight: bold;
     padding: 8px;
+}
+.btn-download-cv:hover{
+    transform: translateY(-4px);
+  background: #00e5ff;
+  color: #000;
+  box-shadow: 
+      0 0 10px #00e5ff,
+      0 0 20px #00e5ff,
+      0 0 40px rgba(0,229,255,0.6);
 }
 .grey-paragraphs{
     margin-bottom: 50px;
@@ -365,7 +381,15 @@ textarea{
     padding: 8px;
     margin-top: 15px;
 }
-
+.send-message:hover{
+    transform: translateY(-4px);
+  background: #00e5ff;
+  color: #000;
+  box-shadow: 
+      0 0 10px #00e5ff,
+      0 0 20px #00e5ff,
+      0 0 40px rgba(0,229,255,0.6);
+}
 /*    FOOTER    */
 .footer{
     display: flex;
@@ -395,7 +419,10 @@ textarea{
     .menu-wrapper{
         display: none;
     }
-
+    .nav-bar:focus-within .menu {
+    opacity: 0;
+    visibility: none;
+    }
     .grid-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -459,6 +486,11 @@ textarea{
         color: #76b5c5;
         font-size: 1.1em;
     }
+    .nav-links a:hover{
+        transform: translateY(-4px) ease;
+ 
+  color: #ffffff;
+    }
     .hire-me-wrapper{
         display: flex;
         height: 100%;
@@ -467,6 +499,7 @@ textarea{
         justify-items: center;
         align-content: center;
     }
+    
     .btn-hire-me {
     display: flex;
     text-decoration: none;
