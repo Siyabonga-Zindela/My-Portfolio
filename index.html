@@ -73,7 +73,7 @@
 
         <div class="home-cards-wrapper">
           <div class="home-cards">
-            <p class="highlights">3+<br /></p>
+            <p class="highlights">2+<br /></p>
             <p class="grey-paragraphs">Projects</p>
           </div>
           <div class="home-cards">
@@ -267,17 +267,31 @@
       
       <div class="projects-wrapper">
         <div class="project">
-          <img src="img/sad_cloud.png" alt="Sad Cloud" />
+          <img src="img/zinexpress-website.png" alt="Zinexpress-Website" />
+          <div class="project-description">
+            <p>Developed a responsive website for ZinExpress to establish a clean and professional online presence.
+                Built with scalability in mind to support future system expansion and added functionality.
+                Planned integration of a Java-based backend for full web system development as the business grows.
+          </p>
+          <div class="project-buttons">
+            <a href="https://zin-express.vercel.app" class="btn-view-projects">Live link</a>
+          </div>
+          </div>
         </div>
+
         <div class="project">
-          <img src="img/sad_cloud.png" alt="Sad Cloud" />
+          <img src="img/zamas-website.png" alt="Zamas-Website" />
+          <div class="project-description">
+            <p>Developed a responsive e-commerce web application with dynamic UI components and structured product pages.
+                Integrated PayFast for secure payments and implemented client-side logic for cart and navigation functionality.
+                Focused on usability, performance, and clean UI design to enhance the overall user experience.
+          </p>
+          <div class="project-buttons">
+            <a href="https://zama-s-organic-skincare.onrender.com/" class="btn-view-projects">Live link</a>
+          </div>
+          </div>
         </div>
-         <div class="project">
-          <img src="img/sad_cloud.png" alt="Sad Cloud" />
-        </div>
-         <div class="project">
-          <img src="img/sad_cloud.png" alt="Sad Cloud" />
-        </div>
+        
       </div>
       <hr class="hr5" />
       
@@ -292,7 +306,7 @@
           skills, professional experience, education, and selected projects.
           Ideal for recruiters, hiring managers, and technical interviews.
         </p>
-        <a href="docs/SIYABONGA ZINDELA CV.pdf" class="btn-download-cv">Download Resume (PDF)</a>
+        <a href="docs/Siyabonga Zindela - (Updated CV).pdf" class="btn-download-cv">Download Resume (PDF)</a>
       </div>
       <hr class="hr6"/>
       
@@ -307,15 +321,15 @@
         </p>
         <!--I still need to -->
         <div class="form-wrapper">
-          <form name="contact" method="POST" data-netlify="true">
+          <form  id="form">
             <input name="user_name" id="user_name" placeholder="Name" />
             <input name="email" id="email" placeholder="Email" />
             <input name="subject" id="subject" placeholder="Subject" />
-            <textarea placeholder="Your message..."></textarea>
+            <textarea placeholder="Your message..." id="message"></textarea>
           </form>
         </div>
 
-        <a href="#" class="send-message">Send Message</a>
+        <a href="#" class="send-message" id="btnSendMessage">Send Message</a>
       </div>
       <br />
       <hr class="hr7"/>
@@ -332,5 +346,6 @@
         </p>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/js/main.js"></script>
   </body>
 </html>

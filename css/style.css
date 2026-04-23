@@ -321,6 +321,25 @@ h4{
     width: 100%;
     border-radius: 10px;
     justify-content: center;
+    justify-items: center;
+}
+.project img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.project-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.project p{
+    padding: 2px;
+    color: grey;
+}
+.project a{
+    text-align: center;
 }
 /*   RESUME    */
 .btn-download-cv{
