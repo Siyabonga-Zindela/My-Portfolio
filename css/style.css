@@ -643,20 +643,7 @@ textarea{
     }
 }
 
-/* ============================================================
-   SCROLL ANIMATIONS (added on top of original styles, nothing
-   above this point was changed)
 
-   Uses native CSS scroll-driven animations (animation-timeline:
-   view()). Supported in Chrome/Edge/Opera 115+. Browsers that
-   don't support it simply ignore these rules and your sections
-   show up normally with no animation — nothing breaks.
-
-   HOW TO USE: just add the class names below to your HTML
-   elements, no JavaScript required.
-   ============================================================ */
-
-/* Generic fade + slide up, triggered as the element scrolls into view */
 @keyframes fade-in-up {
     from {
         opacity: 0;
@@ -668,7 +655,6 @@ textarea{
     }
 }
 
-/* Fade + slide in from the left */
 @keyframes fade-in-left {
     from {
         opacity: 0;
@@ -680,7 +666,6 @@ textarea{
     }
 }
 
-/* Fade + slide in from the right */
 @keyframes fade-in-right {
     from {
         opacity: 0;
@@ -704,7 +689,7 @@ textarea{
     }
 }
 
-/* Glow pulse-in, fits your cyan accent color nicely */
+/* Picture border glow */
 @keyframes glow-in {
     from {
         opacity: 0;
@@ -718,7 +703,6 @@ textarea{
     }
 }
 
-/* --- Utility classes: add these to your HTML elements --- */
 
 .anim-fade-up,
 .anim-fade-left,
@@ -736,15 +720,13 @@ textarea{
 .anim-zoom      { animation-name: zoom-in; }
 .anim-glow      { animation-name: glow-in; }
 
-/* Stagger helpers, e.g. for cards/skills-items inside a wrapper —
-   add .anim-fade-up plus one of these to delay each item slightly */
+
 .anim-delay-1 { animation-delay: 0.1s; }
 .anim-delay-2 { animation-delay: 0.2s; }
 .anim-delay-3 { animation-delay: 0.3s; }
 .anim-delay-4 { animation-delay: 0.4s; }
 
-/* Pre-built suggestions for your existing sections — safe to leave
-   in even if you don't add the classes to your HTML yet */
+
 .my-photo,
 .about-me,
 .skills,
@@ -777,7 +759,6 @@ textarea{
     animation-timing-function: ease-out;
 }
 
-/* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
 .anim-fade-up,
 .anim-fade-left,
@@ -805,9 +786,7 @@ textarea{
 .anim-zoom { animation: zoom-in 0.7s ease-out both; }
 .anim-glow { animation: glow-in 0.7s ease-out both; }
 
-/* =========================================================
-   PREMIUM SCROLL REVEAL SYSTEM
-   ========================================================= */
+
 
 .scroll {
     opacity: 0;
@@ -830,14 +809,12 @@ textarea{
     transform: scale(0.85);
 }
 
-/* visible state */
 .scroll.show {
     opacity: 1;
     transform: translate(0) scale(1);
     filter: blur(0);
 }
 
-/* stagger support */
 .scroll.delay-1 { transition-delay: 0.1s; }
 .scroll.delay-2 { transition-delay: 0.2s; }
 .scroll.delay-3 { transition-delay: 0.3s; }
