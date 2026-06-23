@@ -529,6 +529,7 @@ textarea{
       0 0 10px #00e5ff,
       0 0 20px #00e5ff,
       0 0 40px rgba(0,229,255,0.6);
+    cursor: pointer;
 }
 /*    FOOTER    */
 .footer{

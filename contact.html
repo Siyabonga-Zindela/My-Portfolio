@@ -61,15 +61,26 @@
         </p>
         <!--I still need to -->
         <div class="form-wrapper">
-          <form name="contact" method="POST" data-netlify="true">
-            <input name="user_name" id="user_name" placeholder="Name" />
-            <input name="email" id="email" placeholder="Email" />
-            <input name="subject" id="subject" placeholder="Subject" />
-            <textarea>Your message...</textarea>
+          <form id="form">
+            <input
+              name="user_name"
+              id="user_name"
+              placeholder="Name"
+              required
+            />
+            <input name="email" id="email" placeholder="Email" required />
+            <input name="subject" id="subject" placeholder="Subject" required />
+            <textarea
+              placeholder="Your message..."
+              id="message"
+              required
+            ></textarea>
           </form>
         </div>
 
-        <a href="#" class="send-message">Send Message</a>
+        <a class="send-message" id="btnSendMessage" onclick="sendMail()"
+          >Send Message</a
+        >
       </div>
       <br />
       <hr class="hr7" />

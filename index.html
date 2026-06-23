@@ -6,6 +6,16 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.png">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "nCBS-FOcz288jM3oE",
+      });
+    })();
+</script>
   </head>
   <body>
     <div class="grid-wrapper">
@@ -377,14 +387,14 @@
         <!--I still need to -->
         <div class="form-wrapper">
           <form  id="form">
-            <input name="user_name" id="user_name" placeholder="Name" />
-            <input name="email" id="email" placeholder="Email" />
-            <input name="subject" id="subject" placeholder="Subject" />
-            <textarea placeholder="Your message..." id="message"></textarea>
+            <input name="user_name" id="user_name" placeholder="Name" required/>
+            <input name="email" id="email" placeholder="Email" required/>
+            <input name="subject" id="subject" placeholder="Subject" required/>
+            <textarea placeholder="Your message..." id="message" required></textarea>
           </form>
         </div>
 
-        <a href="#" class="send-message" id="btnSendMessage">Send Message</a>
+        <a class="send-message" id="btnSendMessage" onclick="sendMail()">Send Message</a>
       </div>
       <br />
       <hr class="hr7"/>
@@ -401,6 +411,7 @@
         </p>
       </div>
     </div>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/js/main.js"></script>
   
   </body>
