@@ -20,18 +20,16 @@ const observer = new IntersectionObserver((entries) => {
     if (!entry.isIntersecting) return;
 
     entry.target.classList.add("show");
-    observer.unobserve(entry.target); // run once only (smoother feel)
+    observer.unobserve(entry.target);
   });
 }, {
   threshold: 0.15
 });
 
-/* auto-assign animation styles (NO HTML EDITS NEEDED) */
 items.forEach((el, index) => {
 
   el.classList.add("scroll");
 
-  // automatic variation system
   if (el.classList.contains("home-section-main-title") || el.classList.contains("about-me")) {
     el.classList.add("left");
   }
