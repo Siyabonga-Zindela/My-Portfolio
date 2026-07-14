@@ -359,6 +359,7 @@ h4{
 .live-btn{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     text-decoration: none;
     background-color: #18d9e0d2;
