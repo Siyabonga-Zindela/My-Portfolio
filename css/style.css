@@ -24,6 +24,10 @@ body{
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 .menu a{
   text-decoration: none;
@@ -33,12 +37,12 @@ body{
   font-size: 1.5rem;
   text-align: center;
 }
-/* show menu when image is clicked focused */
+/* show menu when image is clicked focused *//*
 .nav-bar:focus-within .menu {
   opacity: 10;
   visibility: visible;
 }
-
+*/
 hr{
     border: 0.001px #18dae0 solid;
     width: 99%;
