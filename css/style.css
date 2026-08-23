@@ -83,10 +83,13 @@ h4{
     gap: 1rem;
     justify-content: space-between;
     position: sticky;
-    top: 0px;
+    top: 5px;
     z-index: 50;
     backdrop-filter: blur(50px);
     background: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
 }
 .nav-links{
     display: none;
