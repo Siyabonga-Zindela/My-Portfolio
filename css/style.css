@@ -275,11 +275,19 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 5px;
+    box-shadow:
+    0 8px 32px rgba(139, 92, 246, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 .skills-cards{
     border: #18dae0 1px solid;
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center;  
 }
 
 .skills-card-header{
@@ -294,7 +302,6 @@ h4{
 }
 .skills-items-wrapper{
     display: flex;
-   
     flex-wrap: wrap;
     gap: 0.5rem;
     width: 100%;
@@ -312,6 +319,20 @@ h4{
     white-space: nowrap;
     padding: 5px;
     transition: transform 0.3s ease;
+    background: rgba(24, 218, 224, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(24, 218, 224, 0.25);
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 32px rgba(24, 218, 224, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.skills-items img{
+    height: 50px;
+    width: 50px;
 }
 .skills-items:hover{
      transform: translateY(-10px);
@@ -718,12 +739,11 @@ textarea{
     .skills-heading{
         grid-area: skills-heading;
         margin-bottom: 1.5rem;
-         margin-top: 2rem;
+        margin-top: 2rem;
     }
     .skills-wrapper-cards{
         display: flex;
         flex-direction: row;
-        flex: 1;
     }
     .skills-items {
     margin-top: 2%;
